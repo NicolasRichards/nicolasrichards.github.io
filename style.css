@@ -113,11 +113,10 @@ hr {
 
 /* ── Divider with text ── */
 .section-label {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--heading);
   margin-bottom: 2rem;
 }
 
