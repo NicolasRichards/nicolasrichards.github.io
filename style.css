@@ -390,3 +390,90 @@ footer {
     gap: 1rem;
   }
 }
+
+/* ── Essays page ── */
+.essay-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.essay-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+}
+
+.essay-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.essay-item a {
+  color: var(--heading);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.essay-item a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ── Apps page ── */
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.app-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.app-icon-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+.app-icon {
+  width: 100%;
+  border-radius: 22%;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+.app-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.app-name a {
+  color: var(--heading);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.app-name a:hover {
+  color: var(--accent);
+}
+
+.app-body p {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .app-row {
+    grid-template-columns: 72px 1fr;
+    gap: 1.1rem;
+    padding: 1.1rem;
+  }
+}
