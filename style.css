@@ -473,6 +473,46 @@ footer {
   color: var(--text-muted);
 }
 
+/* ── Essay Q&A format ── */
+.essay-qa dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.qa-pair {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.qa-pair:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.qa-pair dt {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--heading);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.qa-pair dt::before {
+  content: "Q: ";
+  color: var(--accent);
+  font-style: normal;
+}
+
+.qa-pair dd {
+  margin: 0;
+  color: var(--text);
+}
+
+.qa-pair dd::before {
+  content: "A: ";
+  color: var(--text-muted);
+  font-style: normal;
+}
+
 /* ── Apps page ── */
 .app-list {
   display: flex;
@@ -520,6 +560,14 @@ footer {
 .app-body p {
   color: var(--text);
   font-size: 0.95rem;
+}
+
+.app-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
