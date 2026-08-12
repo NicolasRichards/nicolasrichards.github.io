@@ -648,7 +648,7 @@ footer {
 
 .sample-thumb {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .sample-thumb img {
@@ -683,6 +683,7 @@ footer {
 .sample-download {
   display: inline-block;
   align-self: flex-start;
+  margin-bottom: 1rem;
   padding: 0.5rem 1.1rem;
   border: 1px solid var(--accent);
   color: var(--accent);
