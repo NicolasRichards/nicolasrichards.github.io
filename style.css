@@ -648,7 +648,6 @@ footer {
 
 .sample-thumb {
   display: block;
-  margin-bottom: 1rem;
 }
 
 .sample-thumb img {
@@ -676,6 +675,7 @@ footer {
 .sample-desc {
   color: var(--text-muted);
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 600px) {
