@@ -485,6 +485,11 @@ footer {
   max-width: 480px;
 }
 
+/* Full-width variant: spans the content column instead of the 480px cap. */
+.video-embed-wide {
+  max-width: none;
+}
+
 .video-embed-frame {
   position: relative;
   width: 100%;
