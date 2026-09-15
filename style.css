@@ -370,7 +370,11 @@ footer {
 /* ── Responsive ── */
 @media (max-width: 600px) {
   nav { height: auto; padding: 1rem 1.25rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-  .nav-links { gap: 1.25rem; }
+  /* Six links overflow a phone-width row, so allow them to wrap rather
+     than clip. The tighter gap and type size keep them on one line at
+     375px and up; narrower screens wrap to a second line. */
+  .nav-links { column-gap: 0.875rem; row-gap: 0.5rem; flex-wrap: wrap; }
+  .nav-links a { font-size: 0.8rem; }
   main { padding: 2rem 1.25rem; }
 
   .book-card {
