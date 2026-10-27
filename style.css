@@ -364,6 +364,7 @@ hr {
 /* ── Handout page (fpaz) ── */
 .handout {
   max-width: 680px;
+  font-size: 0.95rem;
 }
 
 .handout-header {
@@ -385,10 +386,14 @@ hr {
   margin-top: 2.75rem;
 }
 
-/* The global reset zeroes list padding, so prose lists need it back. */
+/* The global reset zeroes list padding, so prose lists need it back.
+   margin-left indents the whole list (marker included) clear of the
+   heading; padding-left is just the gutter the marker sits in. Using
+   padding alone leaves the bullet level with the heading. */
 .handout ul {
   list-style: disc;
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
+  padding-left: 0.85rem;
   margin-bottom: 1.25rem;
 }
 
@@ -443,12 +448,45 @@ hr {
   padding: 1.25rem;
 }
 
+.handout-template-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
 .handout-template-label {
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.copy-btn:hover,
+.copy-btn:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.copy-btn[data-copied="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .handout-template pre {
