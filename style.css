@@ -32,7 +32,10 @@ body {
 }
 
 /* ── Navigation ── */
-header {
+/* Scoped to the site header: a bare `header` also caught the nested
+   <header> elements inside articles (.essay-header, .handout-header),
+   pinning an article's title block to the top with the nav background. */
+body > header {
   background: var(--bg-nav);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -356,6 +359,110 @@ hr {
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
+}
+
+/* ── Handout page (fpaz) ── */
+.handout {
+  max-width: 680px;
+}
+
+.handout-header {
+  margin-bottom: 2.5rem;
+}
+
+.handout-subtitle {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.handout-byline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.handout h2 {
+  margin-top: 2.75rem;
+}
+
+/* The global reset zeroes list padding, so prose lists need it back. */
+.handout ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.handout li {
+  margin-bottom: 0.6rem;
+}
+
+.handout ul ul {
+  list-style: circle;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+
+.handout-sources {
+  font-size: 0.9rem;
+}
+
+/* Tables — the wrapper scrolls instead of letting the page scroll sideways. */
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.handout-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 420px;
+  font-size: 0.95rem;
+}
+
+.handout-table th,
+.handout-table td {
+  border: 1px solid var(--border);
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.handout-table th {
+  background: var(--bg-card);
+  color: var(--heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Copy-paste blocks: pre-wrap so long prompt lines reflow on a phone. */
+.handout-template {
+  margin: 1.5rem 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.handout-template-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.handout-template pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: var(--text);
+  margin: 0;
+}
+
+.handout-download {
+  margin-top: 1.5rem;
 }
 
 /* ── Footer ── */

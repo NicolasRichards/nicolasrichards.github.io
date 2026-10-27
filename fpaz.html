@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI for Fantasy Baseball — Nicolas Richards</title>
+  <meta name="description" content="Practical tips for using AI assistants in fantasy baseball, from AI Office Hours at First Pitch Arizona 2026.">
+  <link rel="canonical" href="https://nicolasrichards.com/fpaz.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nicolasrichards.com/fpaz.html">
+  <meta property="og:title" content="AI for Fantasy Baseball — Nicolas Richards">
+  <meta property="og:description" content="Practical tips for using AI assistants in fantasy baseball, from AI Office Hours at First Pitch Arizona 2026.">
+  <meta property="og:site_name" content="Nicolas Richards">
+  <meta property="og:image" content="https://nicolasrichards.com/images/TranithArgan2Cover.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="2560">
+  <meta property="og:image:alt" content="The Venturing — Book Two of the Tranith Argan series by Nicolas Richards">
+  <meta name="twitter:card" content="summary">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://nicolasrichards.com/fpaz.html#article",
+        "url": "https://nicolasrichards.com/fpaz.html",
+        "headline": "AI for Fantasy Baseball",
+        "description": "Practical tips for using AI assistants in fantasy baseball, from AI Office Hours at First Pitch Arizona 2026.",
+        "author": {
+          "@id": "https://nicolasrichards.com/#nicolas-richards"
+        },
+        "publisher": {
+          "@id": "https://nicolasrichards.com/#nicolas-richards"
+        },
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://nicolasrichards.com/#website"
+        },
+        "mainEntityOfPage": "https://nicolasrichards.com/fpaz.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="nav-brand">Nicolas Richards</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="tranith-argan-maps.html">Maps</a></li>
+      <li><a href="essays.html">Essays</a></li>
+      <li><a href="mlb.html">MLB</a></li>
+      <li><a href="apps.html">Apps</a></li>
+      <li><a href="about.html">Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article class="handout">
+    <header class="handout-header">
+      <h1>AI for Fantasy Baseball</h1>
+      <p class="handout-subtitle">Practical tips from AI Office Hours · First Pitch Arizona 2026</p>
+      <p class="handout-byline">Nick Richards · Facts checked October 2026. Menus, plans, and prices change often, so confirm on the provider's own page before you rely on one.</p>
+    </header>
+
+    <p>These tips work with any AI assistant. I use and recommend Claude, but the examples cover ChatGPT and Gemini too. Pick the tool you like; the habits matter more than the brand.</p>
+
+    <h2>1. Choose your tier</h2>
+    <ul>
+      <li>If you can afford it, pay for the roughly $20/month tier. You get what you pay for: the paid tier is a better experience, and the free tiers no longer get each company's strongest model.</li>
+      <li>What the $20 tier buys today:
+        <ul>
+          <li><strong>Claude Pro:</strong> $20/month ($17/month billed annually). Free includes the Sonnet and Haiku models; Pro adds Opus and at least 5x the usage per session.</li>
+          <li><strong>ChatGPT Plus:</strong> $20/month. Adds the stronger "Thinking" reasoning model, which the free plan doesn't get.</li>
+          <li><strong>Google AI Pro:</strong> $19.99/month. Since October 9, free Gemini users are limited to the lightweight Flash-Lite model.</li>
+        </ul>
+      </li>
+      <li>Watch the names. At Claude and Google, "Pro" is the ~$20 plan. At ChatGPT, the ~$20 plan is Plus, and "Pro" is a much pricier heavy-use tier.</li>
+      <li>Paying buys a stronger model, not a truthful one. Every tip below still applies.</li>
+    </ul>
+
+    <h2>2. One-time setup</h2>
+    <ul>
+      <li>Write account-wide instructions first. It's the highest-payoff five minutes you'll spend. They apply to every chat, so you stop repeating yourself.</li>
+    </ul>
+
+    <div class="table-wrap">
+      <table class="handout-table">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Where to set them</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Claude</td>
+            <td>Settings → Account → Instructions for Claude (Mac app; the web and phone apps may place it differently)</td>
+          </tr>
+          <tr>
+            <td>ChatGPT</td>
+            <td>Web/desktop: Settings → Personalization → Custom Instructions. Phone: Settings → Customize ChatGPT</td>
+          </tr>
+          <tr>
+            <td>Gemini</td>
+            <td>gemini.google.com → Explore Gems → New Gem (a Gem is a saved set of instructions you open for a task)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ul>
+      <li>Keep them short. ChatGPT's Free and Go plans cap custom instructions at 1,500 characters (5,000 on Plus and up). The template in section 3 fits with room to spare.</li>
+      <li>One project per job. A project bundles instructions, files, and chats for one task: one per league, one for draft prep, one for trades. Claude's free plan allows up to five projects. ChatGPT also has Projects; in Gemini, make a Gem per job.</li>
+      <li>Put your league's actual rules in the project. Scoring, roster slots, keeper rules, FAAB. Without them, the AI tends to assume a standard 5x5 roto league.</li>
+      <li>Check what it remembers. Claude has a Memory page in Settings. Open it now and then, and correct or delete anything wrong. If your tool keeps memories, do the same.</li>
+      <li>Make your privacy choice. On Claude's individual plans, training on your chats is opt-out, so if you'd rather it didn't, turn it off under Settings → Privacy. Check the equivalent setting in any other tool.</li>
+    </ul>
+
+    <h2>3. Templates to copy</h2>
+
+    <div class="handout-template">
+      <p class="handout-template-label">Account-wide instructions · 599 characters</p>
+      <pre>I play fantasy baseball and use AI for research and decisions.
+- Never guess. If you aren't sure, say so. Don't invent stats, quotes, or sources. If you can't cite it, say that.
+- When you give a number, tell me where it came from and how current it is.
+- If something could have changed recently (injuries, roles, transactions), look it up or flag it.
+- Push back when I'm wrong. Don't flatter me.
+- If my question is missing something you need, ask before answering.
+- Show your math, or put it in a spreadsheet.
+- Write like I talk: [plain / casual / blunt]. Keep it short unless I ask for depth.</pre>
+    </div>
+
+    <div class="handout-template">
+      <p class="handout-template-label">League project instructions · fill in the brackets</p>
+      <pre>League: [name], [12]-team [H2H points / roto], [dynasty / redraft]. The rules are in the attached file; use them for every valuation.
+Projections: use only the attached BaseballHQ export dated [date]. If a player isn't in it, say so. Don't fill in from memory.
+My roster is in roster.csv.
+On trades, value both sides and tell me what the other owner gains.</pre>
+    </div>
+
+    <h2>4. Using BaseballHQ tools with AI</h2>
+    <ul>
+      <li>The AI doesn't have HQ's projections. You bring them. Run the Custom Draft Guide (or whichever HQ output you use), save it, upload it to your league project, and tell the AI that file is the authority.</li>
+      <li>Make it compute from the file, not from memory. Ask for a spreadsheet with formulas instead of arithmetic in prose. Good jobs for it: merging the CDG's separate hitter and pitcher lists into one, converting values to your league's points scoring, sorting by position or by team need.</li>
+      <li>Date-stamp every upload, e.g. HQ-CDG-2027-02-15.csv. HQ data moves through the offseason, and a stale file read with confidence is worse than no file.</li>
+      <li>Ask what's missing. "Which players on my roster aren't in this file?" catches the gaps it would otherwise fill from memory.</li>
+      <li>Respect the subscription. Before uploading paid content to any AI tool, check that site's terms of use, and keep it out of shared or public projects.</li>
+    </ul>
+
+    <h2>5. Habits during the season</h2>
+    <ul>
+      <li>Ask for reasoning, not verdicts. "Should I make this trade?" gets mush. "Value both sides under my scoring and show the math" gets something you can check.</li>
+      <li>Make it argue against you. "Here's my plan. Find the holes." That works better than hoping the push-back instruction fires on its own.</li>
+      <li>Mind the training cutoff. A model's baseball knowledge stops at its training date. Call-ups, injuries, and role changes after that are invisible unless it searches the web or you hand it the data. Ask it to search.</li>
+      <li>Start a fresh chat when a thread gets long or goes sideways. The project keeps your setup, so starting over costs nothing.</li>
+    </ul>
+
+    <h2>6. Think like an analyst</h2>
+    <ul>
+      <li>Ask about the sample. A strikeout or walk rate over about 100 plate appearances can swing a lot on noise alone. Ask how big the sample is before the AI builds a story on it.</li>
+      <li>Agreement isn't confirmation. Sources built on similar data share the same errors, so three outlets agreeing tells you less than it seems. Ask the AI where the sources actually disagree.</li>
+      <li>Ask for a range, not a number. A floor and a ceiling beat a single projection, especially for prospects.</li>
+    </ul>
+
+    <h2>7. Cautions</h2>
+    <ul>
+      <li>"Never guess" reduces fabrication; it doesn't end it. A model can say it's following the rule and still produce a wrong stat or a made-up citation. Spot-check any number you're going to act on against the source. Simon Prince's textbook <em>Understanding Deep Learning</em> makes the same point: language-model output can sound right while being only partly accurate.</li>
+      <li>The decision is yours. Clean, confident output invites over-trust. The AI is a research assistant, not the GM.</li>
+    </ul>
+
+    <h2>Where these facts come from</h2>
+    <ul class="handout-sources">
+      <li>Claude plans, models, and Free vs. Pro features: <a href="https://claude.com/pricing" target="_blank" rel="noopener">claude.com/pricing</a></li>
+      <li>Claude personalization settings: <a href="https://support.claude.com" target="_blank" rel="noopener">support.claude.com</a>, Understanding Claude's personalization features</li>
+      <li>ChatGPT Plus price: <a href="https://help.openai.com" target="_blank" rel="noopener">help.openai.com</a>, What is ChatGPT Plus?</li>
+      <li>ChatGPT models by plan: <a href="https://chatgpt.com/pricing" target="_blank" rel="noopener">chatgpt.com/pricing</a></li>
+      <li>ChatGPT custom instructions and character limits: <a href="https://help.openai.com" target="_blank" rel="noopener">help.openai.com</a>, ChatGPT Custom Instructions</li>
+      <li>Gemini Gems: <a href="https://support.google.com" target="_blank" rel="noopener">support.google.com</a>, Get started with Gems in Gemini Apps</li>
+      <li>Gemini free-tier change and Google AI Pro price: Computing, Google to restrict Gemini model access for free users (Oct 8, 2026)</li>
+    </ul>
+  </article>
+
+  <hr>
+
+  <p class="handout-download">
+    <a href="fpaz/fpaz-2026-ai-tips.pdf" class="btn" download>Download this handout (PDF)</a>
+  </p>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nicolas Richards. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
