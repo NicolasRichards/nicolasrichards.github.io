@@ -523,10 +523,10 @@ footer {
 }
 
 @media (max-width: 600px) {
-  /* Seven links overflow a phone-width row, so tighten the gap and type
-     enough to keep them on one line at 375px and up; narrower screens
-     wrap to a second line. */
-  .nav-links { column-gap: 0.55rem; }
+  /* Six links overflow a phone-width row at full size, so tighten the
+     gap and type enough to keep them on one line at 360px and up;
+     narrower screens wrap to a second line. */
+  .nav-links { column-gap: 1rem; }
   .nav-links a { font-size: 0.8rem; }
   main { padding: 2rem 1.25rem; }
 
